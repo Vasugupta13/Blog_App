@@ -27,17 +27,20 @@ class BlogDetails extends StatelessWidget {
     double w = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
-        floatingActionButton: FloatingActionButton(
+        floatingActionButton: Align(
+            alignment: const Alignment(1, 0.7),
+          child: FloatingActionButton(
 
-          backgroundColor: AppColors.kWhite,
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-          onPressed: () {
-            Share.share('Check out this Amazing blog!!');
-          },
-          child: const Icon(
-            Icons.share,
-            color: AppColors.kBlack,
+            backgroundColor: AppColors.kWhite,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+            onPressed: () {
+              Share.share('Check out this Amazing blog!!');
+            },
+            child: const Icon(
+              Icons.share,
+              color: AppColors.kBlack,
+            ),
           ),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
