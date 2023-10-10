@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:connectivity/connectivity.dart';
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'package:hive/hive.dart';
@@ -47,7 +47,9 @@ class HomeListController extends GetxController {
       }
     } catch (e) {
       isLoading(false);
-      print(e);
+      if (kDebugMode) {
+        print(e);
+      }
     } finally {
       isLoading(false);
     }

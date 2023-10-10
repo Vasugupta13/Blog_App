@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
         () => Visibility(
           visible: _homeListController.isVisible.value,
           child: Align(
-           alignment: Alignment(1, 0.85),
+           alignment: const Alignment(1, 0.85),
             child: FloatingActionButton(
               backgroundColor: AppColors.kWhite,
               shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
