@@ -25,10 +25,19 @@ Welcome to the Flutter Blog App, a sleek and efficient way to explore and engage
 
 ### Screenshots:
 
-🏠 **Homepage:** 
+🏠 **Homepage:**
 
+ ![photo_2023-10-10_22-30-21](https://github.com/Vasugupta13/Blog_App/assets/98811369/ec1956b9-d60a-4b88-bb26-03d567f57805)
+   
 📝 **Blog Detail:**
    - Dive deep into the details of your favorite blogs.
+   -  ![photo_2023-10-10_22-30-24](https://github.com/Vasugupta13/Blog_App/assets/98811369/2339f770-c9b6-4340-b42a-23dfe48d2032)
+
+🎥 **App Video:**
+
+https://github.com/Vasugupta13/Blog_App/assets/98811369/939e9dd2-23a6-4214-915f-02148d0e92ab
+
+
 
 ### How to Use:
 
