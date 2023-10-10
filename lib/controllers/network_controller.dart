@@ -18,14 +18,14 @@ class NetworkController extends GetxController{
           messageText: const Text(
               'NO INTERNET CONNECTION ',
               style: TextStyle(
-                  color: Colors.white,
+                  color: AppColors.kWhite,
                   fontSize: 14
               )
           ),
           isDismissible: false,
           duration: const Duration(days: 1),
           backgroundColor: AppColors.kPrimary,
-          icon : const Icon(Icons.info_outline_rounded, color: Colors.white, size: 30,),
+          icon : const Icon(Icons.info_outline_rounded, color: AppColors.kWhite, size: 30,),
           margin: EdgeInsets.zero,
           snackStyle: SnackStyle.FLOATING
       );
