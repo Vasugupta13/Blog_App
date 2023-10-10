@@ -71,7 +71,7 @@ class NetworkErrorUi extends StatelessWidget {
             textColor: Colors.black,
             onPressed: () {
               AppSettings.openAppSettings(
-                  type: AppSettingsType.dataRoaming, asAnotherTask: true);
+                  type: AppSettingsType.dataRoaming, asAnotherTask: true,);
             },
             size: 17,
           ),
