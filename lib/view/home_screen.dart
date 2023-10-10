@@ -164,7 +164,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             h: h,
                             w: w,
                             onPressed: () {
-                              _homeListController.blogs.isEmpty;
+                              _homeListController.fetchData();
                             },
                         ),
                     );
