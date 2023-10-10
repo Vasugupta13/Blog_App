@@ -5,6 +5,10 @@ import 'package:http/http.dart' as http;
 import 'package:hive/hive.dart';
 import 'package:subspace/model/home_list_model.dart';
 
+// Controller Working-
+//  - Fetches Data from api
+//  - Store the data to hive
+//  - Then the List of Blog is assigned or updated by hive
 
 class HomeListController extends GetxController {
   var isLoading = true.obs;
@@ -30,7 +34,6 @@ class HomeListController extends GetxController {
       if (cachedData.isNotEmpty) {
         blogs.assignAll(cachedData.values.toList());
       }
-
       var response = await http.get(Uri.parse(url), headers: {
         'Content-Type': 'application/json',
         'x-hasura-admin-secret': adminSecret,
@@ -39,7 +42,6 @@ class HomeListController extends GetxController {
       if (response.statusCode == 200) {
         List<dynamic> data = json.decode(response.body)['blogs'];
         blogs.assignAll(data.map((blog) => Blog.fromJson(blog)).toList());
-
         cachedData.clear();
         cachedData.addAll(blogs);
       } else {
