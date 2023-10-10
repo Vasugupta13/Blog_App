@@ -35,7 +35,7 @@ class BlogDetails extends StatelessWidget {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
             onPressed: () {
-              Share.share('Check out this Amazing blog!!');
+              Share.share('Headline: ${blog.title}');
             },
             child: const Icon(
               Icons.share,
