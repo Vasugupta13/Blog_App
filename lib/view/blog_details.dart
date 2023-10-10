@@ -28,7 +28,7 @@ class BlogDetails extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         floatingActionButton: Align(
-            alignment: const Alignment(1, 0.7),
+            alignment: const Alignment(1, 0.85),
           child: FloatingActionButton(
 
             backgroundColor: AppColors.kWhite,
